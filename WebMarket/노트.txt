@@ -1,0 +1,10 @@
+싱글턴 오브젝트
+	=>> processAddProduct.jsp에서도 
+		productRespository가 필요하고
+		products에서도 
+		필요하다
+		
+		두곳에서 사용하는 객체가 서로 다른 객체가 아니라
+		하나만 만들어두고 사용하는 방식을 말한다.
+		
+		

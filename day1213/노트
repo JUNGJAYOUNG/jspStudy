@@ -1,0 +1,36 @@
+지시자의 종류
+
+1. page
+2. include
+3. taglib
+
+다른 문서로 이동시키기
+<jsp:forward />
+	==> 이동한 문서가 주소표시줄에 노출이 되지 않는다.
+	
+	reponse.sendRedirect();
+	==> 이동한 문서가 주소표시줄에 노출이 된다.
+
+---
+다른 문서를 현재 문서에 포함하기
+
+	<%@ include %>
+	 	==> 포함되는 문서의 서블릿이 생성되지 않음.
+	 	
+	 <jsp:include />
+	    ==> 포함되는 문서의 서블릿이 생성됨.
+---
+
+<jsp:useBean id="person" class="com.sist.vo.Person" scope="request"/>	 
+
+useBean 액션태그로 객체를 생성할 때에
+기본생성자가 요구된다.
+
+그래서 만약 Person클래스에 매개변수를 갖는 생성자만 만들어두고 
+기본 생성자가 없으면
+오류 발생한다.
+
+
+
+
+   
